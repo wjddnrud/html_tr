@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form</title>
+</head>
+
+<body>
+<!-- 
+	<from action="/.result.html">
+	없으면 자동으로 아래와 같이 get 방식으로 적용됨
+	<from method="get" action="./reult.html">
+	result.html?id=abc&password=1234
+	&=구분자
+ -->	
+	<form action="result.html" id="form">
+	<!-- 데이터 숨김 -->
+		
+		<br><input type="color" name="color"> <!-- 색상표 -->
+		<br>
+		<br><input type="file" name="file"> <!-- 파일 첨부 -->
+		<br><br><input type="file" name="file" multiple="multiple"> <!-- 다중파일 첨부 -->
+		<br><br><input type="image" src="../image/puppy1.jpg" name="image" width="100px"><!-- 다음으로 넘어가는 버튼 이미지로 구현 -->
+		<br><br><input type="number" name="number"> <!-- 수량체크 -->
+		<br><br><input type="email" name="email"> <!-- 이메일 작성란, 이메일 형식이 아니면 문구 뜸, submit타입을 사용해야 보임 -->
+		<br><br><input type="range" name="range"> <!-- 정도나 구간을 나타낼때 사용 -->
+		<br><br><input type="search" name="search"> <!-- 검색어를 입력할 수 있는 텍스트 필드를 정의한다. -->
+		<br><br><input type="tel" name="tel"> <!-- 전화번호를 입력할수 있는 필드 정의 -->
+		<br><br><input type="url" name="url">
+		<br>
+		<br>
+		<br><br><input type="submit" value="제출"><!-- 제출하고 다음 페이지로 이동 -->
+		<br><br><input type="reset" value="reset"> <!-- 작성한 내용 초기화, jquery를 사용함 -->
+		
+		
+		
+		
+		
+		
+		<!-- input 태그를 form 태그안에 꼭꼭꼮 넣어야 된다. -->
+		<input type="text" name="id" placeholder="아이디" id="id" autocomplete="on">
+		<input type="text" name="id" placeholder="아이디" id="id" autocomplete="off"><!-- 자동완성 기능 온오프, 패스워드는 없어도 자동으로 오프적용됨 -->
+		<input type="text" name="id" placeholder="아이디" id="id" required><!-- submit타입을 사용해야 보임, 공란 체크할때 사용 -->
+		<input type="text" name="id" placeholder="아이디" id="id" readonly value="아이디"><!-- 내용은 보이는데 수정할수 없게 할때 -->
+		<input type="text" name="id" placeholder="아이디" id="id" disabled value="아이디"><!-- 내용은 보이는데 수정도 스크랩도할 수 없게 할때 -->
+		<br><br>
+		<input type="password" name="password" placeholder="비밀번호" id="password" autocomplete="off">
+		<br><br>
+		<select name="gender">
+			<option value="">성별
+			<option value="남자">남자
+			<option value="여자">여자
+		</select>
+		<br><br>
+		<select name="통신사">
+			<option value="">통신사
+			<option value="SKT">SKT
+			<option value="KT">KT
+			<option value="LG">LG
+		</select>
+		<br><br>
+		<select name="결혼여부">
+			<option value="">결혼여부
+			<option value="미혼">미혼
+			<option value="기혼">기혼
+		</select>
+		<br><br>
+		<h5>취미</h5>
+		<!-- name부분에 다르게 작성해줘야 어떤값이 넘어가졌는지 알 수 있음, 중복체크 기능 -->
+		<input type="checkbox" name="hobby1">여행
+		<input type="checkbox" name="hobby2">게임
+		<input type="checkbox" name="hobby3">독서
+		<input type="checkbox" name="hobby4">운동
+		<input type="checkbox" name="hobby5">영화관람
+		<input type="checkbox" name="hobby6">음악듣기
+		<br><br>
+		<h5>가입경로</h5>
+		<!-- name부분에 동일하게 작성해줘야 단일 체크 할 수 있음, select랑 기능은 똑같으나 시각적 차이 -->
+		<input type="radio" name="route">신문
+		<input type="radio" name="route">잡지
+		<input type="radio" name="route">인터넷 검색
+		<input type="radio" name="route">지인 추천
+		<br><br>
+		<!-- 글 입력창, 박스 크기 고정 및 수동 조정 가능 -->
+		<textarea rows="10" cols="100" name="contents" placeholder="Posting here!"></textarea>
+		<input type="hidden" name="" value=""><!-- 화면에 나타나진 않지만 값을 몰래 넘겨주는 기능 -->
+		<br><br>
+		<input type="date"
+	
+		
+		<br>
+		<br>
+		<br>
+		<input type="submit"><!-- result소스로 넘어가지는 버튼	 -->
+		
+		<input type="button" id="btnSave" value="전송합니다." onclick="here();">
+		
+	</form>
+	
+		<script type="text/javascript">
+		/* validation */
+		function here() {
+			/* alert("nickname: " + document.getElementById("nickname").value); */
+			alert("성공적으로 전송되었습니다.");
+			document.getElementById("form").submit();
+		}
+		</script>
+
+</body>
+</html>
