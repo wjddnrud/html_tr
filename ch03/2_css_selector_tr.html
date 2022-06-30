@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2_css_selector</title>
+		
+	<style type="text/css">
+		p {
+			font-family: 명조화;
+			font-size: 16px;
+			color: white;
+			background-color: black;
+		}
+		#aaa {
+			font-size: 100%;
+			color: red;
+		}
+		.bbb, .aaa {
+			font-weight: bold;
+			font-style: italic;
+			color: white;
+			background-color: brown;
+		}
+	</style>
+		<!-- 선택자가 겹칠시 아래것으로 적용됨 -->
+		
+</head>
+
+<body>
+
+	<p>애니멀공화국은 유기동물과 길고양이 보호, 선진 반려문화 확산을 목표로 하는 소셜벤처 기업입니다.</p>
+	<p id="aaa">애니멀공화국은 유기동물과 길고양이 보호, 선진 반려문화 확산을 목표로 하는 소셜벤처 기업입니다.</p>
+	<p class="aaa">애니멀공화국은 유기동물과 길고양이 보호, 선진 반려문화 확산을 목표로 하는 소셜벤처 기업입니다.</p>
+	<p id="bbb">애니멀공화국은 유기동물과 길고양이 보호, 선진 반려문화 확산을 목표로 하는 소셜벤처 기업입니다.</p>
+	<p class="bbb">애니멀공화국은 유기동물과 길고양이 보호, 선진 반려문화 확산을 목표로 하는 소셜벤처 기업입니다.</p>
+
+</body>
+</html>

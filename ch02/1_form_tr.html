@@ -10,10 +10,12 @@
 			table, th, td {
 				border: 1px solid black;
 				border-collapse: collapse;
+				margin:auto;
 			}
 			
 			th, td {
 				padding: 10px;
+				margin:auto;
 			}
 		</style>
 		
@@ -21,9 +23,9 @@
 	
 	<body>
 		<h6 Align="right">✔ 표시 항목은 필수 입력 항목입니다.</h6>
-		<h4><b>□ 기본정보</b></h4>
-		<form method="get" action="./result.html">
-			<table width="100%">
+		<caption Align="left"><b>□ 기본정보</b></caption>
+		<form method="get" action="./result.html" id="form">
+			<table width="80%">
 				<tr>
 					<td width="150px" height="50px" style="background-color:gray; color:white;" Align=center>✔ 이름</td>
 					<td>
@@ -34,7 +36,7 @@
 					<td height="50px"style="background-color:gray; color:white;" Align=center>✔ 아이디</td>
 					<td>
 						<input type="text" name="id" id="id">
-						<input type="button" name="id_check" value="✔ 아이디 중복확인" id="id_check" onclick="id_check"><br>
+						<input type="button" name="idCheck" value="✔ 아이디 중복확인" id="idCheck" onclick="idcheck()"><br>
 						<h6><small style="color:brown;">※6~16자까지 영문자(소문자), 숫자 사용 가능합니다.</small></h6>
 					</td>
 				</tr>
@@ -180,7 +182,7 @@
 			</table>
 			<br>
 			<center>
-				<input type="button" name="save" value="✔ 저장" id="save">
+				<input type="button" name="save" value="✔ 저장" id="save" onclick="here()">
 				<input type="button" name="cancel" value="취소" id="cancel">
 			</center><br><hr>
 			<table width="100%">
@@ -227,10 +229,10 @@
 				<tr>
 					<td width="150px" height="50px" style="background-color:gray; color:white;" Align=center>✔ 직종</td>
 					<td>
-						<input type="checkbox" name="제작자">제작자
-						<input type="checkbox" name="투자자">투자자
-						<input type="checkbox" name="에이전트">에이전트
-						<input type="checkbox" name="기타">기타
+						<input type="checkbox" name="a">제작자
+						<input type="checkbox" name="a">투자자
+						<input type="checkbox" name="a">에이전트
+						<input type="checkbox" name="a">기타
 						<input type="text" name="기타" id="기타">
 					</td>
 				</tr>
@@ -253,10 +255,15 @@
 		</form>
 		<script type="text/javascript">
 			/* validation */
-			function id_check() {
+			function idCheck() {
 			/* alert("nickname: " + document.getElementById("nickname").value); */
 			alert("사용 가능한 ID입니다.");
-			document.getElementById("form").submit();
+			}
+			
+			function here() {
+			/* alert("nickname: " + document.getElementById("nickname").value); */
+			alert("성공적으로 저장되었습니다.");
+			document.getElementById("form");
 			}
 		</script>
 	</body>

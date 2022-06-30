@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3_css_selector</title>
+	
+	<style type="text/css">
+		/* 여러개의 선택자 */
+		
+		h1, p, span, ul, li {
+			font-size: 20px;
+			color: skyblue;
+		}
+		
+		/* 하위 항목으로 타고 내려가지게 해서 구분하는것 */
+		ul > li {
+			font-size: 10px;
+		}
+		
+		#aaa, .bbb {
+			font-size: 10p
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	<h1>삼성, TSMC 잡을 신무기 내놨다… 세계 최초 3나노 파운드리 양산</h1>
+	<p>삼성전자가 세계 최초로 3나노 파운드리 공정 기반의 초도 양산을 시작했다고 30일 밝혔다. 
+	3나노는 반도체 제조 공정 가운데 가장 앞선 기술이다. 특히 차세대 GAA(게이트 올어라운드) 
+	신기술을 적용한 3나노 공정 파운드리는 전 세계에서 삼성이 유일하다. 이는 세계 1위 파운드리 업체인 
+	대만 TSMC를 따라잡을 주요 계기가 될 것으로 보인다.</p>
+	<span>삼성전자</span>
+	<ul>
+		<li>삼
+		<li>성
+		<li>전
+		<li>자
+	</ul>
+	
+	<hr>
+	
+	<h1 id="aaa">삼성, TSMC 잡을 신무기 내놨다… 세계 최초 3나노 파운드리 양산</h1>
+	<p class="bbb">삼성전자가 세계 최초로 3나노 파운드리 공정 기반의 초도 양산을 시작했다고 30일 밝혔다. 
+	3나노는 반도체 제조 공정 가운데 가장 앞선 기술이다. 특히 차세대 GAA(게이트 올어라운드) 
+	신기술을 적용한 3나노 공정 파운드리는 전 세계에서 삼성이 유일하다. 이는 세계 1위 파운드리 업체인 
+	대만 TSMC를 따라잡을 주요 계기가 될 것으로 보인다.</p>
+	<span id="aaa">삼성전자</span>
+	<ul class="bbb">
+		<li>삼
+		<li>성
+		<li>전
+		<li>자
+	</ul>
+
+
+</body>
+</html>
