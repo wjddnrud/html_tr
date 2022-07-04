@@ -14,6 +14,18 @@
 			padding: 10px;
 			text-align: center;
 		}
+		
+		input {
+			width: 95%;
+		}
+		
+		.input-date {
+			width: 30%;
+		}
+		
+		.number {
+			width: 25%;
+		}
 	</style>
 </head>
 <body>
@@ -62,7 +74,7 @@
 			</td>
 			<td style = background-color:grey>생년월일</td>
 			<td>
-				<input type="date" name="birth" id="birth">
+				<input type="date" name="birth" id="birth" class="input-date">
 			</td>
 		</tr>
 		<tr>
@@ -76,8 +88,8 @@
 					<option value="001">001</option>
 					<option value="032">032</option>
 				</select> -
-				<input type="text" name="phnFront" id="phnFront"> -
-				<input type="text" name="phnBack" id="phnBack">
+				<input type="text" name="phnFront" id="phnFront" class="number"> -
+				<input type="text" name="phnBack" id="phnBack" class="number">
 			</td>
 		</tr>
 		<tr>
@@ -129,8 +141,8 @@
 		<tbody>
 			<tr>
 				<td Align= center>
-					<input type="date" name="dateFront1" id="dateFront1"> ~
-					<input type="date" name="dateBack1" id="dateBack1">
+					<input type="date" name="dateFront1" id="dateFront1" class="input-date"> ~
+					<input type="date" name="dateBack1" id="dateBack1" class="input-date">
 				</td>
 				<td>
 					<input type="text" name="schName1" id="schName1">
@@ -147,8 +159,8 @@
 			</tr>
 			<tr>
 				<td Align= center>
-					<input type="date" name="dateFront2" id="dateFront2"> ~
-					<input type="date" name="dateBack2" id="dateBack2">
+					<input type="date" name="dateFront2" id="dateFront2" class="input-date"> ~
+					<input type="date" name="dateBack2" id="dateBack2" class="input-date">
 				</td>
 				<td>
 					<input type="text" name="schName2" id="schName2">
@@ -178,8 +190,8 @@
 		<tbody>
 			<tr>
 				<td Align= center>
-					<input type="date" name="dateFront3" id="dateFront3"> ~
-					<input type="date" name="dateBack3" id="dateBack3">
+					<input type="date" name="dateFront3" id="dateFront3" class="input-date"> ~
+					<input type="date" name="dateBack3" id="dateBack3" class="input-date">
 				</td>
 				<td>
 					<input type="text" name="agency" id="agency">
@@ -205,23 +217,31 @@
 		<tbody>
 			<tr>
 				<td>
-					<input type="date" name="acquisition1" id="acquisition1">
+					<input type="date" name="acquisition1" id="acquisition1" class="input-date">
 				</td>
 				<td>
 					<input type="text" name="qualiName1" id="qualiName1">
 				</td>
-				<td span style="color:orange;">대한상공회의소</td>
-				<td></td>
+				<td>
+					<input type="text" name="qualiLocal1" id="qualiLocal1">
+				</td>
+				<td>
+					<input type="text" name="qualiGrade1" id="qualiGrade1">
+				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="date" name="acquisition2" id="acquisition2">
+					<input type="date" name="acquisition2" id="acquisition2" class="input-date">
 				</td>
 				<td>
 					<input type="text" name="qualiName2" id="qualiName2">
 				</td>
-				<td span style="color:orange;">한국산업인력공단</td>
-				<td></td>
+				<td>
+					<input type="text" name="qualiLocal2" id="qualiLocal2">
+				</td>
+				<td>
+					<input type="text" name="qualiGrade2" id="qualiGrade2">
+				</td>
 			</tr>
 		</tbody>
 	</table>
@@ -238,22 +258,49 @@
 		</thead>
 		<tbody>
 			<tr height="40px">
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td Align= center>
+					<input type="date" name="dateFront4" id="dateFront4" class="input-date"> ~
+					<input type="date" name="dateBack4" id="dateBack4" class="input-date">
+				</td>
+				<td>
+					<input type="text" name="agency2" id="agency2">
+				</td>
+				<td>
+					<input type="text" name="work1" id="work1">
+				</td>
+				<td>
+					<input type="text" name="exp1" id="exp1">
+				</td>
 			</tr>
 			<tr height="40px">
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td Align= center>
+					<input type="date" name="dateFront5" id="dateFront5" class="input-date"> ~
+					<input type="date" name="dateBack5" id="dateBack5" class="input-date">
+				</td>
+				<td>
+					<input type="text" name="agency3" id="agency3">
+				</td>
+				<td>
+					<input type="text" name="work2" id="work2">
+				</td>
+				<td>
+					<input type="text" name="exp2" id="exp2">
+				</td>
 			</tr>
 			<tr height="40px">
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>
+					<input type="date" name="dateFront6" id="dateFront6" class="input-date"> ~
+					<input type="date" name="dateBack6" id="dateBack6" class="input-date">
+				</td>
+				<td>
+					<input type="text" name="agency4" id="agency4">
+				</td>
+				<td>
+					<input type="text" name="work3" id="work3">
+				</td>
+				<td>
+					<input type="text" name="exp3" id="exp3">
+				</td>
 			</tr>
 		</tbody>
 	</table>
