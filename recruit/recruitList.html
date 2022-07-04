@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+	<title>Recruit</title>
+	<style type="text/css">
+		table, th, td {
+			border: solid 1px black;
+			border-collapse: collapse;
+			margin: auto;
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+		}
+	</style>
+</head>
+
+	<body>
+		<h1>이력서 게시판</h1>
+		<form action="recruitForm.html" id="form">
+			<table width="90%">
+				<tr>
+					<th widtd="100px">이력서 목록</th>
+					<td>
+						<select float= right>
+							<option>분야 선택</option>
+							<option>프론트엔드 개발자</option>
+							<option>백엔드 개발자</option>
+							<option>풀스택 개발자</option>
+							<option>퍼블리셔</option>
+						</select>
+						<input type="search" name="search" id="search" placeholder="🔍 검색" width="500px" >
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width="90%">
+				<tr>
+					<th width="80px;">No</th>
+					<th width="100px;">이름</th>
+					<th width="80px;">성별</th>
+					<th width="80px;">나이</th>
+					<th width="300px;">지원 분야</th>
+					<th width="200px;">연락처</th>
+					<th width="500px;">주소</th>
+					<th width="200px;">작성일</th>
+					<th width="80px;">조회수</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td><a href=recruitView_현빈.html>현빈</a></td>
+					<td>남</td>
+					<td>42</td>
+					<td>풀스택 개발자</td>
+					<td>010-7586-4232</td>
+					<td>서울특별시 강남구</td>
+					<td>2022. 06. 07</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><a href=recruitView_손예진.html>손예진</a></td>
+					<td>여</td>
+					<td>42</td>
+					<td>프론트엔드 개발자</td>
+					<td>010-3254-1525</td>
+					<td>서울특별시 중구</td>
+					<td>2022. 06. 14</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td><a href=recruitView_한지민.html>한지민</a></td>
+					<td>여</td>
+					<td>42</td>
+					<td>퍼블리셔</td>
+					<td>010-4654-7532</td>
+					<td>인천광역시 부평구</td>
+					<td>2022. 06. 21</td>
+					<td>11</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td><a href=recruitView_정해인.html>정해인</a></td>
+					<td>남</td>
+					<td>34</td>
+					<td>프론트엔드 개발자</td>
+					<td>010-9321-1820</td>
+					<td>인천광역시 연수구</td>
+					<td>2022. 06. 28</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td><a href=recruitView_서현진.html>서현진</a></td>
+					<td>여</td>
+					<td>37</td>
+					<td>풀스택 개발자</td>
+					<td>010-7753-1246</td>
+					<td>서울특별시 서대문구</td>
+					<td>2022. 06. 17</td>
+					<td>23</td>
+				</tr>
+			</table>
+			<br>
+			<center>
+				<input type="button" name="regist" id="regist" value="등록" onclick="regist()">
+				<input type="button" name="delete" id="delete" value="삭제">
+			</center>
+		</form>
+		<script type="text/javascript">
+			/* validation */
+			function regist() {
+				alert("");
+				document.getElementById("form").submit();
+			}
+			
+			function here() {
+				alert("성공적으로 저장되었습니다.");
+				document.getElementById("form");
+			}
+		</script>
+	</body>
+</html>
