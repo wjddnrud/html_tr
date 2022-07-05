@@ -2,13 +2,345 @@
 <html>
 <head>
 	<meta charset="uTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>수정폼</title>
+	<meta name="viewport" content="width=device-width initial-scale=1.0"> 
+	<title>입사지원서</title>
+	<style type="text/css">
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		th, td, h1 {
+			padding: 10px;
+			text-align: center;
+		}
+		 
+		input {
+			width: 95%;
+			height: 30px;
+			text-align: center;
+			border-radius: 10px;
+		}
+		
+		.input-date {
+			width: 60%;
+			border-radius: 10px;
+		}
+		
+		.number {
+			width: 25%;
+		}
+		
+		div {
+			width: 900px;
+			margin: auto;
+		}
+		
+		h3 {
+			padding: auto;
+		}
+	</style>
 </head>
-
-	<body>
-		
-		
-		
+	<body style="background-color: #E6E6E6;">
+		<div>
+			<h1><b>입사지원서</h1>
+			<form action="recruitForm.html" id="form">
+				<table width="100%">
+					<tr>
+						<td width="100px" style = "background-color:grey; color: white;">지원분야</td>
+						<td width="100px">
+							<input type="text" name="part" id="part" value="풀스택 개발자">
+						</td>
+						<td width="100px" style = "background-color:grey; color: white;">경력구분</td>
+						<td width="100px">
+							<input type="text" name="career" id="career" value="7년차">
+						</td>
+						<td width="100px" style = "background-color:grey; color: white;">희망연봉</td>
+						<td width="100px">
+							<input type="text" name="pay" id="pay" value="회사 내규에 따름">
+						</td>
+					</tr>
+				</table>
+				<br>
+				<h3>□ 기본정보</h3>
+				<table width="100%">
+					<tr>
+						<td width="100px;" rowspan="6" span style="color:red;">
+							<image alt="서현진" src="../image/recruit/서현진.jpg" width= auto; height= auto;>
+							<input type="file" name="picture" id="picture">
+						</td>
+						<td width="80px;" style = "background-color:grey; color: white;">성명</td>
+						<td width="200px;">
+							<input type="text" name="name" id="name" value="서현진">
+						</td>
+						<td width="80px;" style = "background-color:grey; color: white;">한문</td>
+						<td width="200px;">
+							<input type="text" name="chinName" id="chinName" value="徐玄振">
+						</td>
+					</tr>
+					<tr>
+						<!-- <td></td> -->
+						<td style = "background-color:grey; color: white;">영문</td>
+						<td>
+							<input type="text" name="engName" id="engName" value="Seo hynjin">
+						</td>
+						<td style = "background-color:grey; color: white;">생년월일</td>
+						<td>
+							<input type="date" name="birth" id="birth" class="input-date" value="1985-02-27">
+						</td>
+					</tr>
+					<tr>
+						<!-- <td></td> -->
+						<td style = "background-color:grey; color: white;">전화번호</td>
+						<td colspan="4">
+							<select>
+								<option>선택</option>
+								<option value="010">010</option>
+								<option value="011">011</option>
+								<option value="001">001</option>
+								<option value="032">032</option>
+							</select> -
+							<input type="text" name="phnFront" id="phnFront" class="number" value="7753"> -
+							<input type="text" name="phnBack" id="phnBack" class="number" value="1246">
+						</td>
+					</tr>
+					<tr>
+						<!-- <td></td> -->
+						<td style = "background-color:grey; color: white;">MBTI</td>
+						<td>
+							<input type="text" name="MBTI" id="MBTI" value="INFP">
+						</td>
+						<td style = "background-color:grey; color: white;">나이</td>
+						<td>
+							<input type="number" name="age" id="age" value="37">
+						</td>
+				</tr>
+					<tr>
+						<!-- <td></td> -->
+						<td style = "background-color:grey; color: white;">주소</td>
+						<td colspan="3">
+							<input type="text" name="address" id="address" value="서울특별시 노원구 상계동">
+						</td>
+						<!-- 
+						<td></td>
+						<td></td>
+						-->
+					</tr>
+					<tr>
+						<!-- <td></td> -->
+						<td style = "background-color:grey; color: white;">취미생활</td>
+						<td colspan="3" span style="color:orange;">선택사항
+							<input type="text" name="hobby" id="hobby" value="뜨개질, 여행">
+						</td>
+						<!--
+						<td></td>
+						<td></td>
+						-->
+					</tr>
+				</table>
+				<br>
+				<h3>□ 학력사항 (최신이력이 가장 위로)</h3>
+				<table width="100%">
+					<thead>
+						<tr style = "background-color:grey; color: white;">
+							<td width="200px">기간</td>
+							<td width="100px">출신학교</td>
+							<td width="100px">구분</td>
+							<td width="100px">학과</td>
+							<td width="100px">소재지</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td Align= center>
+								<input type="date" name="dateFront1" id="dateFront1" class="input-date" value="1997-03-01"> ~
+								<input type="date" name="dateBack1" id="dateBack1" class="input-date" value="2001-02-01">
+							</td>
+							<td>
+								<input type="text" name="schName1" id="schName1" value="동덕여자대학교">
+							</td>
+							<td>
+								<input type="text" name="graduate1" id="graduate1" value="졸업">
+							</td>
+							<td>
+								<input type="text" name="dept1" id="dept1" value="실용음악학">
+							</td>
+							<td>
+								<input type="text" name="local1" id="local1" value="서울특별시 종로구">
+							</td>
+						</tr>
+						<tr>
+							<td Align= center>
+								<input type="date" name="dateFront2" id="dateFront2" class="input-date" value="1994-03-01"> ~
+								<input type="date" name="dateBack2" id="dateBack2" class="input-date" value="1997-02-01">
+							</td>
+							<td>
+								<input type="text" name="schName2" id="schName2" value="구정고등학교">
+							</td>
+							<td>
+								<input type="text" name="graduate2" id="graduate2" value="졸업">
+							</td>
+							<td>
+								<input type="text" name="dept2" id="dept2">
+							</td>
+							<td>
+								<input type="text" name="local2" id="local2" value="서울특별시 강남구">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<h3>□ 교육연수</h3>
+				<table width="100%">
+					<thead>
+						<tr style = "background-color:grey; color: white;">
+							<td width="120px">연수기간</td>
+							<td width="100px">연수기관</td>
+							<td width="100px">연수과정 및 내용</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td Align= center>
+								<input type="date" name="dateFront3" id="dateFront3" class="input-date" value="2021-12-30"> ~
+								<input type="date" name="dateBack3" id="dateBack3" class="input-date" value="2022-06-22">
+							</td>
+							<td>
+								<input type="text" name="agency" id="agency" value="(주)이젠 아카데미 (서울 강남역 본원) 국가기간전략산업직종 훈련">
+							</td>
+							<td>
+								<textarea name="content" value="Open API활용 자바 안드로이드 웹&앱 개발자
+									: JAVA, JAVASCRIPT, JQUERY, JSP, SPRING, HTML, CSS, GIT,
+									Bootstrap JSTL, AJAX POSTMAN AWS TOMCAT 등을
+									공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다.">
+								</textarea>
+								<!-- 값이 안들어가짐 -->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<h3>□ 자격사항</h3>
+				<table width="100%">
+					<thead>
+						<tr style = "background-color:grey; color: white;">
+							<th width="150px">취득일</th>
+							<!--<td> 대신 <th>를 쓰면 자동으로 중간정렬 및 볼드체 적용-->
+							<td width="100px">종류 및 등급</td>
+							<td width="100px">발행처</td>
+							<td width="100px">보유기술 및 수준</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<input type="date" name="acquisition1" id="acquisition1" class="input-date" value="2021-08-01">
+							</td>
+							<td>
+								<input type="text" name="qualiName1" id="qualiName1" value="워드프로세서 1급">
+							</td>
+							<td>
+								<input type="text" name="qualiLocal1" id="qualiLocal1" value="대한상공회의소">
+							</td>
+							<td>
+								<input type="text" name="qualiGrade1" id="qualiGrade1" >
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="date" name="acquisition2" id="acquisition2" class="input-date" value="2021-06-01">
+							</td>
+							<td>
+								<input type="text" name="qualiName2" id="qualiName2" value="정보처리기사">
+							</td>
+							<td>
+								<input type="text" name="qualiLocal2" id="qualiLocal2" value="한국산업인력공단">
+							</td>
+							<td>
+								<input type="text" name="qualiGrade2" id="qualiGrade2">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<h3>□ 경력사항(4대 보험 가입 경력)</h3>
+				<table width="100%">
+					<thead>
+						<tr style = "background-color:grey; color: white;">
+							<td width="100px">활동기간</td>
+							<td width="100px">기관</td>
+							<td width="100px">담당업무</td>
+							<td width="100px">경험 및 습득역량</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr height="40px">
+							<td Align= center>
+								<input type="date" name="dateFront4" id="dateFront4" class="input-date"> ~
+								<input type="date" name="dateBack4" id="dateBack4" class="input-date">
+							</td>
+							<td>
+								<input type="text" name="agency2" id="agency2">
+							</td>
+							<td>
+								<input type="text" name="work1" id="work1">
+							</td>
+							<td>
+								<input type="text" name="exp1" id="exp1">
+							</td>
+						</tr>
+						<tr height="40px">
+							<td Align= center>
+								<input type="date" name="dateFront5" id="dateFront5" class="input-date"> ~
+								<input type="date" name="dateBack5" id="dateBack5" class="input-date">
+							</td>
+							<td>
+								<input type="text" name="agency3" id="agency3">
+							</td>
+							<td>
+								<input type="text" name="work2" id="work2">
+							</td>
+							<td>
+								<input type="text" name="exp2" id="exp2">
+							</td>
+						</tr>
+						<tr height="40px">
+							<td>
+								<input type="date" name="dateFront6" id="dateFront6" class="input-date"> ~
+								<input type="date" name="dateBack6" id="dateBack6" class="input-date">
+							</td>
+							<td>
+								<input type="text" name="agency4" id="agency4">
+							</td>
+							<td>
+								<input type="text" name="work3" id="work3">
+							</td>
+							<td>
+								<input type="text" name="exp3" id="exp3">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<br>
+				</div>
+			</form>
+			<center>
+				<input style="width: 100px;" type="button" name="modiregi" id="modiregi" value="수정사항 등록" onclick="modiregi()">
+				<input style="width: 100px;" type="button" name="cancle" id="cancle" value="취소" onclick="cancle()">
+			</center>
+			<br>
+			<br>
+			<script type="text/javascript">
+				function modiregi() {
+					alert("수정이 완료되었습니다.");
+					/* document.getElementById("form").submit(); */
+					location.href="recruitView_SHJ.html";
+				}
+				function cancle() {
+					/* document.getElementById("form").submit(); */
+					location.href="recruitView_SHJ.html";
+				}
+		</script>
 	</body>
 </html>

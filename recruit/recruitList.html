@@ -6,23 +6,35 @@
 	<title>Recruit</title>
 	<style type="text/css">
 		table, th, td {
-			border: solid 1px black;
+			border: double 4px white;
 			border-collapse: collapse;
-			margin: auto;
 			text-align: center;
 		}
+		input, select {
+			border: 1px solid black
+		}
+		
 		h1 {
 			text-align: center;
+		}
+		
+		div {
+			width: 900px;
+			margin: auto;
+		}
+		
+		table {
+			width: 100%;
 		}
 	</style>
 </head>
 
-	<body>
-		<h1>이력서 게시판</h1>
-		<form action="recruitForm.html" id="form">
+	<body style="background-image: url('../image/recruit/bgr9.jpg'); background-size: auto;">
+		<div>
+			<h1>이력서 게시판</h1>
 			<table width="90%">
-				<tr>
-					<th widtd="100px">이력서 목록</th>
+				<tr style = "background-color:grey; color: white;">
+					<th style="width: 120px; height: 60px;">이력서 목록</th>
 					<td>
 						<select float= right>
 							<option>분야 선택</option>
@@ -31,37 +43,37 @@
 							<option>풀스택 개발자</option>
 							<option>퍼블리셔</option>
 						</select>
-						<input type="search" name="search" id="search" placeholder="🔍 검색" width="500px" >
+						<input type="search" name="search" id="search" placeholder="🔍 검색" style="width: 80%;" >
 					</td>
 				</tr>
 			</table>
 			<br>
-			<table width="90%">
-				<tr>
+			<table width="90%" >
+				<tr style = "background-color:grey; color: white;">
 					<th width="80px;">No</th>
-					<th width="100px;">이름</th>
+					<th width="150px;">이름</th>
 					<th width="80px;">성별</th>
 					<th width="80px;">나이</th>
-					<th width="300px;">지원 분야</th>
-					<th width="200px;">연락처</th>
+					<th width="400px;">지원 분야</th>
+					<th width="320px;">연락처</th>
 					<th width="500px;">주소</th>
-					<th width="200px;">작성일</th>
-					<th width="80px;">조회수</th>
+					<th width="220px;">작성일</th>
+					<th width="120px;">조회수</th>
 				</tr>
 				<tr>
 					<td>1</td>
-					<td><a href=recruitView_현빈.html>현빈</a></td>
-					<td>남</td>
-					<td>42</td>
+					<td><a href=recruitView_SHJ.html>서현진</a></td>
+					<td>여</td>
+					<td>37</td>
 					<td>풀스택 개발자</td>
-					<td>010-7586-4232</td>
-					<td>서울특별시 강남구</td>
-					<td>2022. 06. 07</td>
-					<td>25</td>
+					<td>010-7753-1246</td>
+					<td>서울특별시 서대문구</td>
+					<td>2022. 06. 17</td>
+					<td>23</td>
 				</tr>
 				<tr>
 					<td>2</td>
-					<td><a href=recruitView_손예진.html>손예진</a></td>
+					<td><a href=recruitView_SYJ.html>손예진</a></td>
 					<td>여</td>
 					<td>42</td>
 					<td>프론트엔드 개발자</td>
@@ -72,7 +84,7 @@
 				</tr>
 				<tr>
 					<td>3</td>
-					<td><a href=recruitView_한지민.html>한지민</a></td>
+					<td><a href=recruitView_HJM.html>한지민</a></td>
 					<td>여</td>
 					<td>42</td>
 					<td>퍼블리셔</td>
@@ -83,7 +95,7 @@
 				</tr>
 				<tr>
 					<td>4</td>
-					<td><a href=recruitView_정해인.html>정해인</a></td>
+					<td><a href=recruitView_JHI.html>정해인</a></td>
 					<td>남</td>
 					<td>34</td>
 					<td>프론트엔드 개발자</td>
@@ -94,35 +106,35 @@
 				</tr>
 				<tr>
 					<td>5</td>
-					<td><a href=recruitView_서현진.html>서현진</a></td>
-					<td>여</td>
-					<td>37</td>
+					<td><a href=recruitView_HB.html>현빈</a></td>
+					<td>남</td>
+					<td>42</td>
 					<td>풀스택 개발자</td>
-					<td>010-7753-1246</td>
-					<td>서울특별시 서대문구</td>
-					<td>2022. 06. 17</td>
-					<td>23</td>
+					<td>010-7586-4232</td>
+					<td>서울특별시 강남구</td>
+					<td>2022. 06. 07</td>
+					<td>25</td>
 				</tr>
 			</table>
 			<br>
 			<center>
-				<a href=recruitRegForm.html style="text-decoration-line: none;">
-				 <input type="button" name="regist" id="regist" value="등록">
-				</a>
-				<input type="button" name="delete" id="delete" value="삭제">
+				 <input type="button" name="regist" id="regist" value="등록" onclick="regist()">
+				<input type="button" name="delete" id="delete" value="삭제" onclick="del()">
 			</center>
-		</form>
+		</div>
 		<script type="text/javascript">
 			/* validation */
 			function regist() {
-				alert("");
-				document.getElementById("form").submit();
+				/* alert("nickname: " + document.getElementById("nickname").value); */
+				alert("등록 페이지로 이동합니다.");
+				/* document.getElementById("form").submit(); */
+				location.href="recruitRegForm.html";
 			}
-			
-			function here() {
-				alert("성공적으로 저장되었습니다.");
-				document.getElementById("form");
+			function del() {
+				alert("⚠경고⚠ 삭제 버튼을 누르셨습니다. 다시 한번 확인해주세요.");
+				/* document.getElementById("form").submit(); */
+				location.href="recruitList.html";
 			}
-		</script>
+	</script>
 	</body>
 </html>
