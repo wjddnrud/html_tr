@@ -1,0 +1,5 @@
+/* 외부 스타일 시트에는 <style> 이 안의 적용할 조건만 들어있으면 된다 </style>*/
+ p {
+			background-color: blue;
+			color: white;
+	}
