@@ -15,7 +15,7 @@
 			text-align: center;
 		}
 		 
-		input {
+		input, select {
 			width: 95%;
 			height: 30px;
 			text-align: center;
@@ -39,6 +39,25 @@
 		h3 {
 			padding: auto;
 		}
+		
+		select {
+			width: 170px;
+			height: 35px;
+			border-width: 2px;
+			border-color: black;
+			-moz-appearance: none; 
+			-webkit-appearance: none; 
+			appearance: none;
+		}
+		
+		textarea {
+			border-radius: 10px;
+			border-width: 2px;
+			border-color: black;
+			width: 400px;
+			height: 150px;
+			
+		}
 	</style>
 </head>
 	<body style="background-color: #E6E6E6;">
@@ -53,7 +72,7 @@
 						</td>
 						<td width="100px" style = "background-color:grey; color: white;">경력구분</td>
 						<td width="100px">
-							<input type="text" name="career" id="career" value="7년차">
+							<input type="text" name="career" id="career" value="경력 7년차">
 						</td>
 						<td width="100px" style = "background-color:grey; color: white;">희망연봉</td>
 						<td width="100px">
@@ -209,10 +228,11 @@
 								<input type="text" name="agency" id="agency" value="(주)이젠 아카데미 (서울 강남역 본원) 국가기간전략산업직종 훈련">
 							</td>
 							<td>
-								<textarea name="content" value="Open API활용 자바 안드로이드 웹&앱 개발자
+								<textarea name="content">
+									"Open API활용 자바 안드로이드 웹&앱 개발자
 									: JAVA, JAVASCRIPT, JQUERY, JSP, SPRING, HTML, CSS, GIT,
 									Bootstrap JSTL, AJAX POSTMAN AWS TOMCAT 등을
-									공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다.">
+									공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다."
 								</textarea>
 								<!-- 값이 안들어가짐 -->
 							</td>

@@ -21,22 +21,27 @@
 		div {
 			width: 900px;
 			margin: auto;
+			text-align: center;
 		}
 		
 		table {
 			width: 100%;
 		}
+		
+		a {
+			text-decoration-line : none;
+		}
 	</style>
 </head>
 
-	<body style="background-image: url('../image/recruit/bgr9.jpg'); background-size: auto;">
+	<body style="background-image: url('../image/recruit/bgr10.jpg'); background-size: auto;">
 		<div>
-			<h1>이력서 게시판</h1>
+			<h1>입사지원 현황</h1>
 			<table width="90%">
 				<tr style = "background-color:grey; color: white;">
-					<th style="width: 120px; height: 60px;">이력서 목록</th>
+					<th style="width: 150px; height: 60px;">입사지원서 목록</th>
 					<td>
-						<select float= right>
+						<select>
 							<option>분야 선택</option>
 							<option>프론트엔드 개발자</option>
 							<option>백엔드 개발자</option>
@@ -51,14 +56,14 @@
 			<table width="90%" >
 				<tr style = "background-color:grey; color: white;">
 					<th width="80px;">No</th>
-					<th width="150px;">이름</th>
-					<th width="80px;">성별</th>
-					<th width="80px;">나이</th>
-					<th width="400px;">지원 분야</th>
-					<th width="320px;">연락처</th>
-					<th width="500px;">주소</th>
-					<th width="220px;">작성일</th>
-					<th width="120px;">조회수</th>
+					<th width="200px;">이름</th>
+					<th width="100px;">성별</th>
+					<th width="100px;">나이</th>
+					<th width="500px;">지원 분야</th>
+					<th width="350px;">연락처</th>
+					<th width="600px;">주소</th>
+					<th width="250px;">작성일</th>
+					<th width="150px;">조회수</th>
 				</tr>
 				<tr>
 					<td>1</td>
@@ -118,9 +123,16 @@
 			</table>
 			<br>
 			<center>
-				 <input type="button" name="regist" id="regist" value="등록" onclick="regist()">
+				<input type="button" name="regist" id="regist" value="등록" onclick="regist()">
 				<input type="button" name="delete" id="delete" value="삭제" onclick="del()">
 			</center>
+			<br>
+			<br>
+			<span><a href=recruitList.html>1</a></span>&nbsp;&nbsp;
+			<span><a href=recruitList.html>2</a></span>&nbsp;&nbsp;
+			<span><a href=recruitList.html>3</a></span>&nbsp;&nbsp;
+			<span><a href=recruitList.html>4</a></span>&nbsp;&nbsp;
+			<span><a href=recruitList.html>5</a></span>&nbsp;&nbsp;
 		</div>
 		<script type="text/javascript">
 			/* validation */
@@ -135,21 +147,6 @@
 				/* document.getElementById("form").submit(); */
 				location.href="recruitList.html";
 			}
-			var countDownDate = new Date("Dec 5, 2022 23:59:59").getTime();
-			var x = setInterval(function() {
-			var now = new Date().getTime();
-		  	var distance = countDownDate - now;
-		  	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		  		document.getElementById("demo").innerHTML = days + "일 " + hours + "시 "
-		  		+ minutes + "분 " + seconds + "초 남있습니다";
-		  	if (distance < 0) {
-		    	clearInterval(x);
-		    	document.getElementById("demo").innerHTML = "마감되었습니다";
-		  	}
-			}, 1000);
 		</script>
 	</body>
 </html>
