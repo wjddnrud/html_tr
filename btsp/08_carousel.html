@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- cdn 온라인 해석 서비스 -->  
+</head>
+  
+	<body>
+		
+		<!-- 시간이 지나면 자동으로 넘어가는 카드 -->
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="width: 20rem;">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		</div>
+		<hr>
+		<!-- 시간이 지나면 자동으로 넘어가며 수동으로도 넘길수 있는 카드 -->
+		<div style="width: 20rem;" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		<hr>
+		<!-- 자동 넘어감 + 수동 넘김 + 현재 슬라이드 표시 카드 -->
+		<div style="width: 20rem;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		<hr>
+		<!-- 자동 넘어감 + 수동 넘김 + 현재 슬라이드 표시 + 캡션 카드 -->
+		<div style="width: 20rem;" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>First slide label</h5>
+		        <p>Some representative placeholder content for the first slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Second slide label</h5>
+		        <p>Some representative placeholder content for the second slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Third slide label</h5>
+		        <p>Some representative placeholder content for the third slide.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		<hr>
+		<!-- 흐려지며 넘어가지는 카드 -->
+		<div style="width: 20rem;" id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>			
+		<hr>
+		<!-- auto play기능 없이 수동으로만 넘어가지는 카드 -->
+		<div style="width: 20rem;" id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		<hr>
+		<!-- 배경색이 점점 어두워지는 슬라이드 카드 -->
+		<div style="width: 20rem;" id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-bs-interval="2000">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>First slide label</h5>
+		        <p>Some representative placeholder content for the first slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item" data-bs-interval="2000">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Second slide label</h5>
+		        <p>Some representative placeholder content for the second slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Third slide label</h5>
+		        <p>Some representative placeholder content for the third slide.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		<hr>
+		<!-- 슬라이드 넘어가는 시간 조정가능 카드 -->
+		<div style="width: 20rem;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-bs-interval="2000">
+		      <img src="../project/image/HealthMate/black panther.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="2000">
+		      <img src="../project/image/HealthMate/푸들.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item" data-bs-interval="2000">
+		      <img src="../project/image/HealthMate/고먐미.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	</body>
+</html>
